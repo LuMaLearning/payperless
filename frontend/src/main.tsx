@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './components/Login.tsx'
-
+import Dashboard from './components/Dashboard.tsx'
 const router = createBrowserRouter([
   {
     path: '/login',
@@ -14,6 +14,10 @@ const router = createBrowserRouter([
     path: '/',
     // TODO: errorElement
     element: <App />,
+  },
+  {
+    path: '/dashboard',
+    element: <Dashboard />,
   },
 ])
 
